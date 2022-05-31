@@ -19,9 +19,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
+  width: 100%;
 }
 </style>
