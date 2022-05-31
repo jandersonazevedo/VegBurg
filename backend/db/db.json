@@ -1,0 +1,101 @@
+{
+    "ingredientes": {
+        "paes": [
+            {
+                "id": 1,
+                "tipo": "Pão americano"
+            },
+            {
+                "id": 2,
+                "tipo": "Pão italiano"
+            },
+            {
+                "id": 3,
+                "tipo": "Brioche"
+            },
+            {
+                "id": 4,
+                "tipo": "Pão australiano"
+            },
+            {
+                "id": 5,
+                "tipo": "Pão de azeite"
+            },
+            {
+                "id": 6,
+                "tipo": "Pão de cebola"
+            },
+            {
+                "id": 7,
+                "tipo": "Ciabatta"
+            },
+            {
+                "id": 8,
+                "tipo": "Pão integral"
+            }
+        ],
+        "carnes": [
+            {
+                "id": 1,
+                "tipo": "Soja"
+            },
+            {
+                "id": 2,
+                "tipo": "Grão-de-bico"
+            },
+            {
+                "id": 3,
+                "tipo": "Lentilha"
+            },
+            {
+                "id": 4,
+                "tipo": "Aveia"
+            },
+            {
+                "id": 5,
+                "tipo": "Feijão"
+            }
+        ],
+        "opcionais": [
+            {
+                "id": 1,
+                "tipo": "Cogumelos"
+            },
+            {
+                "id": 2,
+                "tipo": "Tofu"
+            },
+            {
+                "id": 3,
+                "tipo": "Ervilha"
+            },
+            {
+                "id": 4,
+                "tipo": "Tomate"
+            },
+            {
+                "id": 4,
+                "tipo": "Cebola roxa"
+            },
+            {
+                "id": 4,
+                "tipo": "Pepino"
+            }
+        ]
+    },
+    "status": [
+        {
+            "id": 1,
+            "tipo": "Solicitado"
+        },
+        {
+            "id": 2,
+            "tipo": "Em produção"
+        },
+        {
+            "id": 3,
+            "tipo": "Finalizado"
+        }
+    ],
+    "burgers": []
+}
