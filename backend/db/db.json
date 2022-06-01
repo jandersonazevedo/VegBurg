@@ -169,6 +169,19 @@
       ],
       "status": "Solicitado",
       "id": 6
+    },
+    {
+      "nome": "Lucilene",
+      "carne": "Lentilha",
+      "pao": "Ciabatta",
+      "opcionais": [
+        "Alface",
+        "Pepino",
+        "Tomate",
+        "Tofu"
+      ],
+      "status": "Solicitado",
+      "id": 7
     }
   ]
 }
