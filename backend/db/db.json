@@ -1,101 +1,174 @@
 {
-    "ingredientes": {
-        "paes": [
-            {
-                "id": 1,
-                "tipo": "Pão americano"
-            },
-            {
-                "id": 2,
-                "tipo": "Pão italiano"
-            },
-            {
-                "id": 3,
-                "tipo": "Brioche"
-            },
-            {
-                "id": 4,
-                "tipo": "Pão australiano"
-            },
-            {
-                "id": 5,
-                "tipo": "Pão de azeite"
-            },
-            {
-                "id": 6,
-                "tipo": "Pão de cebola"
-            },
-            {
-                "id": 7,
-                "tipo": "Ciabatta"
-            },
-            {
-                "id": 8,
-                "tipo": "Pão integral"
-            }
-        ],
-        "carnes": [
-            {
-                "id": 1,
-                "tipo": "Soja"
-            },
-            {
-                "id": 2,
-                "tipo": "Grão-de-bico"
-            },
-            {
-                "id": 3,
-                "tipo": "Lentilha"
-            },
-            {
-                "id": 4,
-                "tipo": "Aveia"
-            },
-            {
-                "id": 5,
-                "tipo": "Feijão"
-            }
-        ],
-        "opcionais": [
-            {
-                "id": 1,
-                "tipo": "Cogumelos"
-            },
-            {
-                "id": 2,
-                "tipo": "Tofu"
-            },
-            {
-                "id": 3,
-                "tipo": "Ervilha"
-            },
-            {
-                "id": 4,
-                "tipo": "Tomate"
-            },
-            {
-                "id": 4,
-                "tipo": "Cebola roxa"
-            },
-            {
-                "id": 4,
-                "tipo": "Pepino"
-            }
-        ]
-    },
-    "status": [
-        {
-            "id": 1,
-            "tipo": "Solicitado"
-        },
-        {
-            "id": 2,
-            "tipo": "Em produção"
-        },
-        {
-            "id": 3,
-            "tipo": "Finalizado"
-        }
+  "ingredientes": {
+    "paes": [
+      {
+        "id": 1,
+        "tipo": "Pão americano"
+      },
+      {
+        "id": 2,
+        "tipo": "Pão italiano"
+      },
+      {
+        "id": 3,
+        "tipo": "Brioche"
+      },
+      {
+        "id": 4,
+        "tipo": "Pão australiano"
+      },
+      {
+        "id": 5,
+        "tipo": "Pão de azeite"
+      },
+      {
+        "id": 6,
+        "tipo": "Pão de cebola"
+      },
+      {
+        "id": 7,
+        "tipo": "Ciabatta"
+      },
+      {
+        "id": 8,
+        "tipo": "Pão integral"
+      }
     ],
-    "burgers": []
+    "carnes": [
+      {
+        "id": 1,
+        "tipo": "Soja"
+      },
+      {
+        "id": 2,
+        "tipo": "Grão-de-bico"
+      },
+      {
+        "id": 3,
+        "tipo": "Lentilha"
+      },
+      {
+        "id": 4,
+        "tipo": "Aveia"
+      },
+      {
+        "id": 5,
+        "tipo": "Feijão"
+      }
+    ],
+    "opcionais": [
+      {
+        "id": 1,
+        "tipo": "Cogumelos"
+      },
+      {
+        "id": 2,
+        "tipo": "Tofu"
+      },
+      {
+        "id": 3,
+        "tipo": "Ervilha"
+      },
+      {
+        "id": 4,
+        "tipo": "Tomate"
+      },
+      {
+        "id": 5,
+        "tipo": "Cebola roxa"
+      },
+      {
+        "id": 6,
+        "tipo": "Pepino"
+      },
+      {
+        "id": 7,
+        "tipo": "Alface"
+      }
+    ]
+  },
+  "status": [
+    {
+      "id": 1,
+      "tipo": "Solicitado"
+    },
+    {
+      "id": 2,
+      "tipo": "Em produção"
+    },
+    {
+      "id": 3,
+      "tipo": "Finalizado"
+    }
+  ],
+  "burgers": [
+    {
+      "nome": "Janderson",
+      "carne": "Aveia",
+      "pao": "Pão integral",
+      "opcionais": [
+        "Alface",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "nome": "Michel",
+      "carne": "Grão-de-bico",
+      "pao": "Pão de cebola",
+      "opcionais": [
+        "Ervilha",
+        "Tomate",
+        "Tofu",
+        "Cebola roxa"
+      ],
+      "status": "Solicitado",
+      "id": 2
+    },
+    {
+      "nome": "Antonio",
+      "carne": "Lentilha",
+      "pao": "Pão americano",
+      "opcionais": [
+        "Cogumelos"
+      ],
+      "status": "Solicitado",
+      "id": 3
+    },
+    {
+      "nome": "Janderson",
+      "carne": "Grão-de-bico",
+      "pao": "Brioche",
+      "opcionais": [
+        "Cogumelos",
+        "Ervilha",
+        "Cebola roxa"
+      ],
+      "status": "Solicitado",
+      "id": 4
+    },
+    {
+      "nome": "Janderson",
+      "carne": "Grão-de-bico",
+      "pao": "Pão de cebola",
+      "opcionais": [
+        "Ervilha",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 5
+    },
+    {
+      "nome": "Mayhara",
+      "carne": "Grão-de-bico",
+      "pao": "Pão australiano",
+      "opcionais": [
+        "Cogumelos",
+        "Ervilha"
+      ],
+      "status": "Solicitado",
+      "id": 6
+    }
+  ]
 }

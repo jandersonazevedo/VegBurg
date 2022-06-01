@@ -41,7 +41,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 20px;
+  font-size: 23px;
   margin-bottom: 30px;
   color: #111;
 }

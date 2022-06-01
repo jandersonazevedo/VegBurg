@@ -1,7 +1,7 @@
 <template>
   <div>
-    <p>Component de mensagem</p>
-    <form id="burger-form">
+    <Message :msg="msg" v-show="msg" />
+    <form id="burger-form" @submit="createBurger">
       <div class="input-container">
         <label
           ><span>Nome do cliente:</span>
@@ -19,7 +19,7 @@
           ><span>Escolha o pão:</span>
           <select name="pao" v-model="pao" required>
             <option value="" selected>Selecione seu pão</option>
-            <option v-for="pao in paes" :key="pao.id" :value="pao.type">
+            <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">
               {{ pao.tipo }}
             </option>
           </select>
@@ -28,7 +28,7 @@
       <div class="input-container">
         <label
           ><span>Escolha a carne: </span>
-          <select name="carne" v-model="carne">
+          <select name="carne" v-model="carne" required>
             <option value="" selected>Selecione o tipo de carne</option>
             <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">
               {{ carne.tipo }}
@@ -64,6 +64,7 @@
 </template>
 
 <script>
+import Message from "./Message.vue";
 export default {
   name: "BurgerForm",
   data() {
@@ -75,7 +76,6 @@ export default {
       pao: null,
       carne: null,
       opcionais: [],
-      status: "Solicitado",
       msg: null,
     };
   },
@@ -87,10 +87,39 @@ export default {
       this.carnes = data.carnes;
       this.opcionaisdata = data.opcionais;
     },
+    async createBurger(e) {
+      e.preventDefault();
+      const data = {
+        nome: this.nome,
+        carne: this.carne,
+        pao: this.pao,
+        opcionais: Array.from(this.opcionais),
+        status: "Solicitado",
+      };
+
+      const dataJson = JSON.stringify(data);
+      const req = await fetch("http://localhost:3000/burgers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: dataJson,
+      });
+
+      const res = await req.json();
+
+      this.msg = `Pedido Nº ${res.id} realizado com sucesso!`;
+
+      setTimeout(() => (this.msg = ""), 3000);
+
+      this.nome = "";
+      this.carne = "";
+      this.pao = "";
+      this.opcionais = "";
+    },
   },
   mounted() {
     this.getIngredientes();
   },
+  components: { Message },
 };
 </script>
 
