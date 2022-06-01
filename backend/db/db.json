@@ -101,5 +101,43 @@
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "nome": "Janderson",
+      "carne": "Grão-de-bico",
+      "pao": "Pão australiano",
+      "opcionais": [
+        "Cogumelos",
+        "Tofu",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 1
+    },
+    {
+      "nome": "Janiel",
+      "carne": "Feijão",
+      "pao": "Pão italiano",
+      "opcionais": [
+        "Cogumelos"
+      ],
+      "status": "Em produção",
+      "id": 3
+    },
+    {
+      "nome": "Gerferson",
+      "carne": "Grão-de-bico",
+      "pao": "Ciabatta",
+      "opcionais": [
+        "Cogumelos",
+        "Ervilha",
+        "Cebola roxa",
+        "Pepino",
+        "Tomate",
+        "Tofu"
+      ],
+      "status": "Solicitado",
+      "id": 5
+    }
+  ]
 }
