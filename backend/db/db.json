@@ -111,33 +111,59 @@
         "Tofu",
         "Tomate"
       ],
-      "status": "Solicitado",
+      "status": "Finalizado",
       "id": 1
     },
     {
-      "nome": "Janiel",
-      "carne": "Feijão",
-      "pao": "Pão italiano",
+      "nome": "Antonio",
+      "carne": "Soja",
+      "pao": "Brioche",
       "opcionais": [
-        "Cogumelos"
+        "Cogumelos",
+        "Ervilha",
+        "Pepino"
       ],
+      "status": "Em produção",
+      "id": 2
+    },
+    {
+      "nome": "Maria",
+      "carne": "Aveia",
+      "pao": "Pão de cebola",
+      "opcionais": [],
       "status": "Em produção",
       "id": 3
     },
     {
-      "nome": "Gerferson",
+      "nome": "Sandra",
       "carne": "Grão-de-bico",
       "pao": "Ciabatta",
       "opcionais": [
-        "Cogumelos",
-        "Ervilha",
-        "Cebola roxa",
-        "Pepino",
-        "Tomate",
+        "Pepino"
+      ],
+      "status": "Solicitado",
+      "id": 4
+    },
+    {
+      "nome": "Marcos",
+      "carne": "Feijão",
+      "pao": "Pão de azeite",
+      "opcionais": [
         "Tofu"
       ],
       "status": "Solicitado",
       "id": 5
+    },
+    {
+      "nome": "Regina",
+      "carne": "Grão-de-bico",
+      "pao": "Pão americano",
+      "opcionais": [
+        "Tomate",
+        "Ervilha"
+      ],
+      "status": "Solicitado",
+      "id": 6
     }
   ]
 }

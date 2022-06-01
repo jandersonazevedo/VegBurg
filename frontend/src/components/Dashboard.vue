@@ -1,5 +1,6 @@
 <template>
   <div id="burger-table">
+    <Message :msg="msg" v-show="msg" />
     <table>
       <thead>
         <th>Nº</th>
@@ -43,6 +44,7 @@
 </template>
 
 <script>
+import Message from "./Message.vue";
 export default {
   name: "Dashboard",
   data() {
@@ -50,43 +52,36 @@ export default {
       burgers: null,
       burger_id: null,
       status: [],
+      msg: null,
     };
   },
   methods: {
     async getPedidos() {
       const req = await fetch("http://localhost:3000/burgers");
-
       const data = await req.json();
-
       this.burgers = data;
-
       this.getStatus();
     },
-
     async getStatus() {
       const req = await fetch("http://localhost:3000/status");
-
       const data = await req.json();
-
       this.status = data;
     },
-
     async deleteBurger(id) {
       const req = await fetch(`http://localhost:3000/burgers/${id}`, {
         method: "DELETE",
       });
-
       const res = await req.json();
 
+      this.msg = `Pedido cancelado com sucesso!`;
+
+      setTimeout(() => (this.msg = ""), 3000);
       this.getPedidos();
     },
     async updateBurger(event, id) {
       const option = event.target.value;
-
       const dataJson = JSON.stringify({ status: option });
-
-      const req = await fetch(`http://localhost:3000/burgers/${id}`,
-      {
+      const req = await fetch(`http://localhost:3000/burgers/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: dataJson,
@@ -94,11 +89,15 @@ export default {
 
       const res = await req.json();
 
+      this.msg = `O pedido  Nº ${res.id} foi atualizado para ${res.status}!`;
+
+      setTimeout(() => (this.msg = ""), 3000);
     },
   },
   mounted() {
     this.getPedidos();
   },
+  components: { Message },
 };
 </script>
 
